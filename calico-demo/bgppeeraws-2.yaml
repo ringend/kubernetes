@@ -1,0 +1,9 @@
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: bgppeer-aws-ibgp
+spec:
+  peerSelector: location == 'aws'
+  nodeSelector: location == 'aws'
+
+

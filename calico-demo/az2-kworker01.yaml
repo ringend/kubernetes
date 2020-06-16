@@ -1,0 +1,18 @@
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  annotations:
+    projectcalico.org/kube-labels: '{"beta.kubernetes.io/arch":"amd64","beta.kubernetes.io/os":"linux","kubernetes.io/arch":"amd64","kubernetes.io/hostname":"az2-kworker01","kubernetes.io/os":"linux","location":"az"}'
+  creationTimestamp: null
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: az2-kworker01
+    kubernetes.io/os: linux
+    location: az
+  name: az2-kworker01
+spec:
+  bgp:
+    ipv4Address: 192.168.96.101/24
+    asNumber: 64514

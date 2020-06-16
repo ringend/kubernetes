@@ -1,0 +1,20 @@
+
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  annotations:
+    projectcalico.org/kube-labels: '{"beta.kubernetes.io/arch":"amd64","beta.kubernetes.io/os":"linux","kubernetes.io/arch":"amd64","kubernetes.io/hostname":"kworkera1","kubernetes.io/os":"linux","location":"az"}'
+  creationTimestamp: null
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: kworkera1
+    kubernetes.io/os: linux
+    location: az
+  name: kworkera1
+spec:
+  bgp:
+    ipv4Address: 192.168.97.101/24
+    asNumber: 64514
+

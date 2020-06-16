@@ -1,0 +1,9 @@
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: bgppeer-az-ibgp
+spec:
+  peerSelector: location == 'az'
+  nodeSelector: location == 'az'
+
+

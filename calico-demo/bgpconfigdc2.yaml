@@ -1,0 +1,7 @@
+kind: BGPConfiguration
+  metadata:
+    name: bgpconfig-dc2
+  spec:
+    nodeSelector: label == 'dc2'
+    asNumber: 64513
+

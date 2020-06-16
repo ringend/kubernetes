@@ -1,0 +1,18 @@
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  annotations:
+    projectcalico.org/kube-labels: '{"beta.kubernetes.io/arch":"amd64","beta.kubernetes.io/os":"linux","kubernetes.io/arch":"amd64","kubernetes.io/hostname":"aws-kwoker01","kubernetes.io/os":"linux","location":"aws"}'
+  creationTimestamp: null
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: aws-kwoker01
+    kubernetes.io/os: linux
+    location: aws
+  name: aws-kwoker01
+spec:
+  bgp:
+    ipv4Address: 192.168.95.101/24
+    asNumber: 64516

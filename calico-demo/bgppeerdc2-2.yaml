@@ -1,0 +1,9 @@
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: bgppeer-dc2-ibgp
+spec:
+  peerSelector: location == 'dc2'
+  nodeSelector: location == 'dc2'
+
+

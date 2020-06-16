@@ -1,0 +1,10 @@
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: bgppeer-dc2
+spec:
+  peerIP: 192.168.98.254
+  asNumber: 65000
+  nodeSelector: location == 'dc2'
+
+
